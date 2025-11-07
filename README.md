@@ -1,4 +1,4 @@
-# Real-ESRGAN.axera
+# DeOldify.axera
 DeOldify DEMO on Axera
 
 - 目前支持  Python 语言
