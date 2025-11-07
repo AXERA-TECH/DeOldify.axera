@@ -1,0 +1,54 @@
+{
+  "output_dir": "./output",
+  "work_dir": "",
+  "model_type": "ONNX",
+  "target_hardware": "AX650",
+  "npu_mode": "NPU3",
+  "onnx_opt": {
+    "disable_onnx_optimization": false,
+    "model_check": false,
+   },
+  "quant": {
+    "input_configs": [
+      {
+        "tensor_name": "DEFAULT",
+        "calibration_dataset": "npy.zip",
+        "calibration_format": "Numpy",
+        "calibration_size": 10,
+        "calibration_mean": [0, 0, 0],
+        "calibration_std": [1.0, 1.0, 1.0]
+      }
+    ],
+    "layer_configs":[
+      {
+        "start_tensor_names": ["DEFAULT"],
+        "end_tensor_names": ["DEFAULT"],
+        "data_type": "U16"
+      }
+    ],
+    "calibration_method": "MinMax",
+    "precision_analysis": true,
+    "precision_analysis_method": "EndToEnd",
+    "precision_analysis_mode": "Reference"
+
+  },
+  "input_processors": [
+    {
+      "tensor_name": "DEFAULT",
+      "tensor_format": "AutoColorSpace",
+      "tensor_layout": "NCHW",
+      "src_layout": "NCHW",
+      "src_format": "AutoColorSpace",
+      "src_dtype": "FP32",
+    }
+  ],
+  "output_processors": [
+    {
+      "tensor_name": "DEFAULT",
+    }
+  ],
+  "compiler": {
+    "check": 0
+  }
+}
+
