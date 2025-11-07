@@ -1,7 +1,7 @@
 # 模型转换
 
 ## 导出模型（ONNX）
-导出onnx可以代码：
+导出onnx可以参考代码：
 ```
 import torch
 from pathlib import Path
