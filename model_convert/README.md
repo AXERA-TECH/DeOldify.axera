@@ -16,7 +16,7 @@ dummy_input = torch.randn(1, 3, 512, 512)
 torch.onnx.export(
     model,
     dummy_input,
-    "./onnx/colorize_stable.onnx",
+    "./colorize_stable.onnx",
     input_names=["input"],
     output_names=["output"],
     opset_version=11
