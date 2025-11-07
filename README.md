@@ -48,7 +48,7 @@ cd python
 python3 run_axmodel.py --input_path image/1850Geography.jpg --model_path ./colorize_stable.axmodel
 ```  
 输出结果
-![output](asserts/res_ax.jpg)
+![output](image/sr_colorize.jpg)
 
 
 运行参数说明:  
