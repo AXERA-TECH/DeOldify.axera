@@ -50,7 +50,7 @@ onnxsim colorize_stable.onnx  colorize_stable_sim.onnx --overwrite-input-shape=1
 参考命令如下：
 
 ```
-pulsar2 build --input colorize_stable.onnx --config ./build_config.json --output_dir ./output --output_name rcolorize_stable.axmodel  --target_hardware AX650 --compiler.check 0
+pulsar2 build --input colorize_stable.onnx --config ./build_config.json --output_dir ./output --output_name colorize_stable.axmodel  --target_hardware AX650 --compiler.check 0
 
 也可将参数写进json中，直接执行：
 pulsar2 build --config ./build_config.json
