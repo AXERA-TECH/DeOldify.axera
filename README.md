@@ -1,7 +1,8 @@
 # Real-ESRGAN.axera
 DeOldify DEMO on Axera
 
-- 目前支持  Python 语言 
+- 目前支持  Python 语言
+- 支持任意分辨率的老旧图片上色
 - 预编译模型下载[models](https://huggingface.co/AXERA-TECH/DeOldify/tree/main/model)。如需自行转换请参考[模型转换](/model_convert/README.md)
 
 ## 支持平台
